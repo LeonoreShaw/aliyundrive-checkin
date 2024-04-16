@@ -22,10 +22,10 @@ class AliyundriveInfo:
                           f'奖励：{self.reward_notice}\n' \
                           f'任务：{self.task_notice}\n' \
                           f'自动签到成功！ \n' \
-                          f'【阿里云盘 Token 有效！】\n' \ 
+                          f'阿里云盘 Token 有效！\n' \ 
 
         else:
-            message_all =  f'【阿里云盘 Token 失效！】\n' \ 
+            message_all =  f'阿里云盘 Token 失效！\n' \ 
                            f'签到失败\n错误信息：{self.message}'
 
         return message_all
