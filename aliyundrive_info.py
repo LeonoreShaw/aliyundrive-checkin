@@ -17,15 +17,16 @@ class AliyundriveInfo:
     def __str__(self) -> str:
         message_all = ''
         if self.success:
-            message_all = f'\n 用户：{self.user_name}\n' \
-                          f'签到：本月已签到{self.signin_count}次\n' \
-                          f'奖励：{self.reward_notice}\r' \
-                          f'自动签到成功！\v' \
-                          f'🎉 阿里云盘 Token 有效！\v'
+            message_all =  f'\n 🎉 阿里云盘 Token 有效！\n' \
+                           f'\n 用户：{self.user_name}\n' \
+                           f'签到：本月已签到{self.signin_count}次\n' \
+                           f'奖励：{self.reward_notice}\n' \
+                           f'\n自动签到成功！\n'
+                         
                           
 
         else:
             message_all =  f'\n 😭 【阿里云盘 Token 失效！】\n' \
-                           f'\n签到失败\n错误信息：{self.message} \n'
+                           f'\n 签到失败 \n 错误信息：{self.message} \n'
 
         return message_all
